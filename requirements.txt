@@ -7,7 +7,7 @@ clean-fid
 diskcache
 einops
 facexlib
-fastapi>=0.90.1
+fastapi>=0.100.0
 gradio==3.41.2
 inflection
 jsonmerge
