@@ -111,9 +111,9 @@ def progressapi(req: ProgressRequest):
 
     elapsed_since_start = time.time() - shared.state.time_start
     predicted_duration = elapsed_since_start / progress if progress > 0 else None
-    eta = predicted_duration - elapsed_since_start if predicted_duration is not None else None
+    eta = predicted_duration - elapsed_since_start if predicted_duration is not None else 0.0
 
-    live_preview = None
+    live_preview = ""
     id_live_preview = req.id_live_preview
 
     if opts.live_previews_enable and req.live_preview:

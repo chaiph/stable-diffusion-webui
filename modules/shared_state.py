@@ -121,7 +121,7 @@ class State:
         self.skipped = False
         self.interrupted = False
         self.stopping_generation = False
-        self.textinfo = None
+        self.textinfo = ''
         self.job = job
         devices.torch_gc()
         log.info("Starting job %s", job)
